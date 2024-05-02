@@ -1,4 +1,4 @@
-name: triggered workflow
+name: gh-actions branch triggered workflow
 
 on:
   workflow_dispatch:
