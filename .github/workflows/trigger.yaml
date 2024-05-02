@@ -1,4 +1,4 @@
-name: triggered workflow
+name: gh-actions branch triggered workflow
 
 on:
   workflow_dispatch:
@@ -19,4 +19,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
         with:
+          ref: refs/heads/gh-actions  # Specify the feature branch here
           fetch-depth: 0
+      
+      - name: This is FROM FEATURE Branch
+        run: echo "running on gh-actions branch"
