@@ -24,3 +24,6 @@ jobs:
       
       - name: This is FROM FEATURE Branch
         run: echo "running on gh-actions branch"
+      
+      - name: Test output
+        run: echo $(cat .test_output)
